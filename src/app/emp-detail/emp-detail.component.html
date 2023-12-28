@@ -1,0 +1,43 @@
+<app-home></app-home>
+<br>
+<br>
+<div
+  style="width:50%;padding-top: 5px; padding-bottom: 10px; margin-left: auto;margin-right: auto;padding: 10px; background-color: rgb(228, 231, 193);">
+  <p>Detail of </p>
+  <h4>{{employeess.employee_name}}</h4>
+</div>
+<table class="table"
+  style="width:50%;padding-top: 10px; padding-bottom: 20px; margin-left: auto;margin-right: auto;padding: 20px;"
+  *ngIf="employeess">
+  <tbody>
+    <tr>
+      <td>Id</td>
+      <td>{{employeess.id}}</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>{{employeess.employee_name}}</td>
+    </tr>
+    <tr>
+      <td>Email ID</td>
+      <td>{{employeess.employee_email}}</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>{{employeess.employee_age}}</td>
+    </tr>
+    <tr>
+      <td>Salary</td>
+      <td>{{employeess.employee_salary}}</td>
+    </tr>
+    <tr>
+      <button (click)="deleteEmp(employeess)" routerLink="/list-emp" class="btn btn-danger me-3"
+        style="background-color: rgb(218, 47, 41);border: none;"> Delete</button>
+      <button (click)="editEmp(employeess)" style="background-color: rgb(27, 90, 43); border: none;"
+        class="btn btn-secondary me-3 px-3"> Edit</button>
+      <button routerLink="/list-emp" class="btn btn-primary" style="background-color: rgb(107, 117, 107);border: none;">
+        Employees List</button>
+    </tr>
+  </tbody>
+
+</table>

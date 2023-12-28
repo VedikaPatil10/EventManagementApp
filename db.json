@@ -1,0 +1,32 @@
+{
+  "employees": [
+    {
+      "id": 4,
+      "employee_name": "John",
+      "employee_email": "john00@gmail.com",
+      "employee_salary": "250000",
+      "employee_age": "33"
+    },
+    {
+      "id": 6,
+      "employee_name": "Sia",
+      "employee_email": "dsia34@gmail.com",
+      "employee_salary": "22000",
+      "employee_age": "26"
+    },
+    {
+      "id": 9,
+      "employee_name": "Albert",
+      "employee_email": "albert22@gmail.com",
+      "employee_salary": "26000",
+      "employee_age": "28"
+    }
+  ],
+  "admin": [
+    {
+      "email": "vedika@gmail.com",
+      "password": "admin10",
+      "id": 1
+    }
+  ]
+}
